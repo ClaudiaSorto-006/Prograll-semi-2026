@@ -37,43 +37,7 @@ RadioButton opt;
         tempVal = findViewById(R.id.txtNum2);
         Double Num2 = Double.parseDouble(tempVal.getText().toString());
 
-        double respuesta = 0;
 
-        radioGroup = findViewById(R.id.optOpciones);
-
-        tempVal = findViewById(R.id.lblRespuesta);
-
-        switch (radioGroup.getCheckedRadioButtonId()){
-            case R.id.optSuma:
-                 respuesta = Num1 + Num2;
-                 break;
-            case  R.id.optResta:
-                respuesta = Num1 - Num2;
-                case  R.id.optMultiplicar:
-                    respuesta = Num1 * Num2;
-                    break;
-            case  R.id.optDividir:
-                respuesta = Num1 / Num2;
-                break;
-             case  R.id.optMultiplicar:
-                respuesta = Num1 * Num2;
-                break;
-            case  R.id.optPorcentaje:
-                respuesta = Num1 * Num2/ 100;
-                break;
-            case  R.id.optFactorial:
-                double factNum1 = factorial(Num1);
-                double factNum2 = factorial(Num2);
-                tempVal.setText("el facotiral de:" + Num1 + "es " +factNum1 +
-                                "\nFactorial de " + Num2 + "es " +factNum2);
-                return;
-                break;
-            case  R.id.optExponenciacion:
-                respuesta =  Num1 / Num2;
-                break;
-            case  R.id.optRaiz:
-                respuesta =  Num1 / Num2;
-                break;
 
 
 
@@ -81,13 +45,6 @@ RadioButton opt;
 
 
 
-        tempVal.setText("Respuesta:" + respuesta);
+
     }
-    public double factorial(double numero){
-        double resultado = 1;
-        for (int i = 1; i <= numero; i++){
-            resultado *= i;
-        }
-        return resultado;
-    }
-};
+
