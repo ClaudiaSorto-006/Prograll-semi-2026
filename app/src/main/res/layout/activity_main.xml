@@ -74,10 +74,10 @@
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toTopOf="@+id/btnCalcular"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.86"
+        app:layout_constraintHorizontal_bias="0.573"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtNum2"
-        app:layout_constraintVertical_bias="0.303">
+        app:layout_constraintVertical_bias="0.377">
 
         <RadioButton
             android:id="@+id/optSuma"
@@ -110,6 +110,23 @@
             android:layout_height="wrap_content"
             android:text="PORCENTAJE" />
 
+        <RadioButton
+            android:id="@+id/optFactorial"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="FACTORIAL" />
+
+        <RadioButton
+            android:id="@+id/optExponenciacion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="EXPONENCIACION" />
+
+        <RadioButton
+            android:id="@+id/optRaiz"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="RAIZ" />
 
     </RadioGroup>
 
@@ -120,7 +137,7 @@
         android:text="CALCULAR"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtNum2"
-        app:layout_constraintVertical_bias="0.632"
+        app:layout_constraintVertical_bias="0.908"
         tools:layout_editor_absoluteX="0dp" />
 
 
